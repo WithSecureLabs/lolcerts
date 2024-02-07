@@ -1,4 +1,4 @@
-# Living Off The Land Certificates (LoLCerts)
+# Living Off The ~~Land~~Leaked Certificates (LoLCerts)
 
 Threat actors are known to sign their malware using either stolen or legally acquired code signing certificates. This threat is becoming more relevant as more and more defenses are relying on digital signatures for allowing or not execution on an endpoint. This project aims at collecting the details of the certificates that are known to be abused in the wild by malicious actors.
 
