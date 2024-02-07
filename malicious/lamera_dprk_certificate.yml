@@ -1,0 +1,11 @@
+name: lamera_dprk_certificate
+meta:
+  status: revoked
+  source: malicious
+  description: |
+    Certificate utilised to sign malware attributed to North Korea.
+  references: https://labs.withsecure.com/publications/no-pineapple-dprk-targeting-of-medical-research-and-technology-sector
+  date: 31-08-2023
+  author: WithSecure 
+issuer: LAMERA CORPORATION LIMITED
+serial: ["87:9f:a9:42:f9:f0:97:b7:4f:d6:f7:da:bc:f1:74:5a"]

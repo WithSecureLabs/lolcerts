@@ -1,0 +1,13 @@
+import "pe"
+
+rule {{ status }}_{{ name }} {
+   meta:{% for key,value in meta.items() %}
+      {{ key }} = "{{ value.strip() }}"{% endfor %}
+      
+   condition:
+      uint16(0) == 0x5a4d and {%if timestamp != "" %}{{ timestamp }}{% endif %}
+      for any i in (0 .. pe.number_of_signatures) : (
+         pe.signatures[i].issuer contains "{{ issuer }}" and
+         pe.signatures[i].serial == {{ serial }}
+      )
+}
