@@ -1,0 +1,11 @@
+name: hangil_it_leaked_certificate
+meta:
+  status: revoked
+  source: leaked
+  description: |
+    Leaked Hangil IT Co., Ltd certificate utilised by various malware.
+  references: ""
+  date: 15-11-2023
+  author: Riccardo Ancarani 
+issuer: Sectigo Public Code Signing CA R36
+serial: ["01:39:dd:e1:19:bb:32:0d:fb:9f:5d:ef:e3:f7:12:45"]

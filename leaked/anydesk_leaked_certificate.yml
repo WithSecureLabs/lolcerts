@@ -1,0 +1,12 @@
+name: anydesk_leaked_certificate
+meta:
+  status: revoked
+  source: leaked
+  description: |
+    AnyDesk Revoked Certificates after public statement: https://anydesk.com/en/public-statement 
+  references: "https://github.com/Neo23x0/signature-base/blob/master/yara/gen_anydesk_compromised_cert_feb23.yar"
+  date: 07-02-2024
+  author: Florian Roth 
+issuer: DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1
+serial: ["0d:bf:15:2d:ea:f0:b9:81:a8:a9:38:d5:3f:76:9d:b8"]
+timestamp: 1706486400 
