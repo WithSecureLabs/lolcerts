@@ -1,6 +1,6 @@
 # Living Off The ~~Land~~Leaked Certificates (LoLCerts)
 
-Threat actors are known to sign their malware using either stolen or legally acquired code signing certificates. This threat is becoming more relevant as more and more defenses are relying on digital signatures for allowing or not execution on an endpoint. This project aims at collecting the details of the certificates that are known to be abused in the wild by malicious actors.
+Threat actors are known to sign their malware using stolen, or even legally acquired, code signing certificates. This threat is becoming more relevant as more and more defenses are relying on digital signatures for allowing or not execution on an endpoint. This project aims at collecting the details of the certificates that are known to be abused in the wild by malicious actors.
 
 The `scripts` directory contains a Python script used to generate Yara rules for all the certificates.
 Rules are written according to [Nextron System - Short tutorial how to create a yara rule for a compromised certificate](https://www.nextron-systems.com/2018/11/01/short-tutorial-how-to-create-a-yara-rule-for-a-compromised-certificate/).
