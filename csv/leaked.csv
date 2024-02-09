@@ -1,11 +1,11 @@
 name,status,source,description,references,date,author,issuer,timestamp,serial
-msi_leaked_certificate,revoked,leaked,Leaked certificate from MicroStar International (MSI) driver package.
-,https://thehackernews.com/2023/05/msi-data-breach-private-code-signing.html,31-08-2023,WithSecure,DigiCert SHA2 Assured ID Code Signing CA,,0b:88:60:32:86:1d:95:53:c6:8f:80:33:13:a9:89:75
-lapsus_nvidia_leaked_certificate,revoked,leaked,Leaked NVIDIA certificate utilised by LAPSUS.
-,https://www.malwarebytes.com/blog/news/2022/03/stolen-nvidia-certificates-used-to-sign-malware-heres-what-to-do,31-08-2023,Florian Roth,VeriSign Class 3 Code Signing 2010 CA,1646092800,43:bb:43:7d:60:98:66:28:6d:d8:39:e1:d0:03:09:f5
-lapsus_nvidia_leaked_certificate,revoked,leaked,Leaked NVIDIA certificate utilised by LAPSUS.
-,https://www.malwarebytes.com/blog/news/2022/03/stolen-nvidia-certificates-used-to-sign-malware-heres-what-to-do,31-08-2023,Florian Roth,VeriSign Class 3 Code Signing 2010 CA,1646092800,14:78:1b:c8:62:e8:dc:50:3a:55:93:46:f5:dc:c5:18
 hangil_it_leaked_certificate,revoked,leaked,Leaked Hangil IT Co., Ltd certificate utilised by various malware.
 ,,15-11-2023,Riccardo Ancarani,Sectigo Public Code Signing CA R36,,01:39:dd:e1:19:bb:32:0d:fb:9f:5d:ef:e3:f7:12:45
 anydesk_leaked_certificate,revoked,leaked,AnyDesk Revoked Certificates after public statement: https://anydesk.com/en/public-statement 
 ,https://github.com/Neo23x0/signature-base/blob/master/yara/gen_anydesk_compromised_cert_feb23.yar,07-02-2024,Florian Roth,DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1,1706486400,0d:bf:15:2d:ea:f0:b9:81:a8:a9:38:d5:3f:76:9d:b8
+lapsus_nvidia_leaked_certificate,revoked,leaked,Leaked NVIDIA certificate utilised by LAPSUS.
+,https://www.malwarebytes.com/blog/news/2022/03/stolen-nvidia-certificates-used-to-sign-malware-heres-what-to-do,31-08-2023,Florian Roth,VeriSign Class 3 Code Signing 2010 CA,1646092800,43:bb:43:7d:60:98:66:28:6d:d8:39:e1:d0:03:09:f5
+lapsus_nvidia_leaked_certificate,revoked,leaked,Leaked NVIDIA certificate utilised by LAPSUS.
+,https://www.malwarebytes.com/blog/news/2022/03/stolen-nvidia-certificates-used-to-sign-malware-heres-what-to-do,31-08-2023,Florian Roth,VeriSign Class 3 Code Signing 2010 CA,1646092800,14:78:1b:c8:62:e8:dc:50:3a:55:93:46:f5:dc:c5:18
+msi_leaked_certificate,revoked,leaked,Leaked certificate from MicroStar International (MSI) driver package.
+,https://thehackernews.com/2023/05/msi-data-breach-private-code-signing.html,31-08-2023,WithSecure,DigiCert SHA2 Assured ID Code Signing CA,,0b:88:60:32:86:1d:95:53:c6:8f:80:33:13:a9:89:75
