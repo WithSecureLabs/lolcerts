@@ -19,7 +19,7 @@ for folder in ("leaked", "malicious"):
                 yml["name"],
                 yml["meta"]["status"],
                 yml["meta"]["source"],
-                yml["meta"]["description"],
+                yml["meta"]["description"].strip().replace("\n", " "),
                 yml["meta"]["references"],
                 yml["meta"]["date"],
                 yml["meta"]["author"],
