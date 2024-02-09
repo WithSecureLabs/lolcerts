@@ -34,8 +34,8 @@ jobs:
 
       - name: Update repository
         run: |
-          git config --global user.name "GitHub Actions [Bot]"
-          git config --global user.email "noreply@github.com"
+          git config --local user.name "GitHub Actions [Bot]"
+          git config --local user.email "noreply@github.com"
           git add yara
           git add csv
           git commit -m "Auto-generated detection artifacts"
