@@ -19,10 +19,10 @@ for folder in ("leaked", "malicious"):
                 yml["name"],
                 yml["meta"]["status"],
                 yml["meta"]["source"],
-                yml["meta"]["description"].strip().replace("\n", " "),
-                yml["meta"]["references"],
+                yml["meta"]["description"].strip().replace("\n", " ").replace(",", ""),
+                yml["meta"]["references"].replace(",", ""),
                 yml["meta"]["date"],
-                yml["meta"]["author"],
+                yml["meta"]["author"].replace(",", ""),
                 yml["issuer"],
                 str(yml["timestamp"]) if "timestamp" in yml else "",
                 serial
