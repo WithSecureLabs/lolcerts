@@ -25,12 +25,12 @@ jobs:
       - name: Generate CSVs
         working-directory: ./scripts
         run: |
-          python generate-csv.py
+          python generate_csv.py
 
       - name: Generate YARA
         working-directory: ./scripts
         run: |
-          python generate-yara.py
+          python generate_yara.py
 
       - name: Update repository
         run: |
