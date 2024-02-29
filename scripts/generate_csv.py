@@ -1,9 +1,12 @@
+import csv
 import glob
 import yaml
 
 for folder in ("leaked", "malicious"):
     yml_files = glob.glob(f"../{folder}/*.yml", recursive=True)
-    csv_content = "name,status,source,description,references,date,author,issuer,timestamp,serial\n"
+    csv_file = open(f"../csv/{folder}.csv", "w")
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(["name","status","source","description","references","date","author","issuer","timestamp","serial"])
 
     # Generate the csv file for each folder
     for yml_file in yml_files:
@@ -15,18 +18,16 @@ for folder in ("leaked", "malicious"):
                 print(exc)
         for serial in yml["serial"]:
             # Generate the csv entry
-            entry = ",".join([
+            csv_writer.writerow([
                 yml["name"],
                 yml["meta"]["status"],
                 yml["meta"]["source"],
-                yml["meta"]["description"].strip().replace("\n", " ").replace(",", ""),
-                yml["meta"]["references"].replace(",", ""),
+                yml["meta"]["description"].strip().replace("\n", " "),
+                yml["meta"]["references"],
                 yml["meta"]["date"],
-                yml["meta"]["author"].replace(",", ""),
+                yml["meta"]["author"],
                 yml["issuer"],
                 str(yml["timestamp"]) if "timestamp" in yml else "",
                 serial
             ])
-            csv_content += f"{entry}\n"
-    with open(f"../csv/{folder}.csv", "w") as f:
-        f.write(csv_content)
+    csv_file.close()
