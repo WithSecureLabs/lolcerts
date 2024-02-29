@@ -1,0 +1,47 @@
+name: "Generate Artifacts"
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "leaked/**"
+      - "malicious/**"
+  workflow_dispatch:
+
+jobs:
+  generate-artifacts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r ./scripts/requirements.txt
+
+      - name: Generate CSVs
+        working-directory: ./scripts
+        run: |
+          python generate_csv.py
+
+      - name: Generate YARA
+        working-directory: ./scripts
+        run: |
+          python generate_yara.py
+
+      - name: Update repository
+        run: |
+          git config --local user.name "GitHub Actions [Bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add yara
+          git add csv
+          git commit -m "Auto-generated detection artifacts"
+          git push
+
