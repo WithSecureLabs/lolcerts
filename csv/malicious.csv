@@ -1,0 +1,3 @@
+name,status,source,description,references,date,author,issuer,timestamp,serial
+lamera_dprk_certificate,revoked,malicious,Certificate utilised to sign malware attributed to North Korea.,https://labs.withsecure.com/publications/no-pineapple-dprk-targeting-of-medical-research-and-technology-sector,31-08-2023,WithSecure,LAMERA CORPORATION LIMITED,,87:9f:a9:42:f9:f0:97:b7:4f:d6:f7:da:bc:f1:74:5a
+hacking_team_malicious_certificate,expired,malicious,Certificate utilised by Hacking Team.,https://www.trendmicro.com/vinfo/fr/security/news/vulnerabilities-and-exploits/the-hacking-team-leak-zero-days-patches-and-more-zero-days,15-11-2023,WithSecure,VeriSign Class 3 Code Signing 2010 CA,,0f:1b:43:48:4a:13:69:c8:30:38:dc:24:e7:77:8b:7d
